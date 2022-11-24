@@ -1,0 +1,85 @@
+CREATE TABLE tb_usuario(
+	id_usuario INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	rut VARCHAR(14) NOT NULL,
+    nombres VARCHAR(99) NOT NULL,
+    apellidos VARCHAR(99) NOT NULL,
+    telefono VARCHAR(99) NULL,
+    cargo VARCHAR(99) NOT NULL,
+    fnac DATE NOT NULL,
+    correo VARCHAR(99) NOT NULL,
+    contraseña TEXT(99) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_libros(
+    id_libros INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(255) NOT NULL,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    area VARCHAR(255) NOT NULL,
+    modulo VARCHAR(255) NOT NULL,
+    letra VARCHAR(255) NOT NULL,
+    editorial VARCHAR(255) NOT NULL,
+    librerias VARCHAR(255) NOT NULL,
+    stock VARCHAR(255) NOT NULL,
+    observaciones TEXT NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_areas(
+    id_areas INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    area VARCHAR(255) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_modulos(
+    id_modulos INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    modulo VARCHAR(255) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_letra(
+    id_letra INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    letra VARCHAR(255) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_librerias(
+    id_librerias INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    librerias VARCHAR(255) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
+
+CREATE TABLE tb_editorial(
+    id_editorial INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    editorial VARCHAR(255) NOT NULL,
+    estado VARCHAR(99) NOT NULL,
+    
+    fyh_creacion DATETIME NULL,
+    fyh_actualizacion DATETIME NULL,
+    fyh_eliminacion DATETIME NULL
+);
